@@ -62,7 +62,7 @@ public class Main extends JavaPlugin implements Listener {
 		ItemMeta meta = raygun.getItemMeta();
 		meta.setDisplayName("RayGun");
 		meta.setLore(new ArrayList<String>() {{
-				add("WARNING! Extremely dangerous!");
+			add("WARNING! Extremely dangerous!");
 		}});
 		raygun.setItemMeta(meta);
 
@@ -81,7 +81,11 @@ public class Main extends JavaPlugin implements Listener {
 		if (event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
 			Player player = event.getPlayer();
 			ItemStack is = player.getItemInHand();
-			if (is.hasItemMeta() && is.getItemMeta().hasDisplayName() && is.getItemMeta().hasLore() && is.getItemMeta().getDisplayName().equals("RayGun") && is.getItemMeta().getLore().contains("WARNING! Extremely dangerous!")) {
+			if (is.hasItemMeta() 
+					&& is.getItemMeta().hasDisplayName()
+					&& is.getItemMeta().hasLore() 
+					&& is.getItemMeta().getDisplayName().equals("RayGun") 
+					&& is.getItemMeta().getLore().contains("WARNING! Extremely dangerous!")) {
 
 				Location pl = player.getEyeLocation();
 
