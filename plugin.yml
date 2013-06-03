@@ -1,5 +1,5 @@
 name: RayGun
-version: 0.1
+version: 1.0
 main: me.lucasemanuel.raygun.Main
 
 permissions:
