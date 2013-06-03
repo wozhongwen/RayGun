@@ -49,18 +49,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
 
-	private ConsoleLogger	logger;
 	private ShapedRecipe raygun;
 
 	public void onEnable() {
-		logger = new ConsoleLogger(this, "Main");
-		logger.debug("Initiating startup sequence...");
-
 		setupRecipe();
-
 		getServer().getPluginManager().registerEvents(this, this);
-
-		logger.debug("Started!");
 	}
 
 	@SuppressWarnings("serial")
