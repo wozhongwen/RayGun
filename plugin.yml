@@ -1,0 +1,8 @@
+name: RayGun
+version: 0.1
+main: me.lucasemanuel.raygun.Main
+
+permissions:
+  raygun.craft:
+    description: Allows a player to craft the raygun.
+    default: op
