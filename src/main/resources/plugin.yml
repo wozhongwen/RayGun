@@ -1,6 +1,7 @@
-name: RayGun
-version: 1.0
-main: me.lucasemanuel.raygun.Main
+name: ${project.name}
+author: LucasEmanuel
+version: ${project.version}
+main: ${project.groupId}.${project.artifactId}.Main
 
 permissions:
   raygun.craft:
