@@ -2,11 +2,11 @@
  *  Name:    Main.java
  *  Created: 17:24:17 - 3 jun 2013
  * 
- *  Author:  Lucas Arnström - LucasEmanuel @ Bukkit forums
+ *  Author:  Lucas Arnstrï¿½m - LucasEmanuel @ Bukkit forums
  *  Contact: lucasarnstrom(at)gmail(dot)com
  *  
  *
- *  Copyright 2013 Lucas Arnström
+ *  Copyright 2013 Lucas Arnstrï¿½m
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -58,7 +58,7 @@ public class Main extends JavaPlugin implements Listener {
 
 	@SuppressWarnings("serial")
 	private void setupRecipe() {
-		ItemStack raygun = new ItemStack(Material.CARROT_ITEM);
+		ItemStack raygun = new ItemStack(Material.TRIPWIRE);
 		ItemMeta meta = raygun.getItemMeta();
 		meta.setDisplayName("RayGun");
 		meta.setLore(new ArrayList<String>() {{
@@ -69,7 +69,7 @@ public class Main extends JavaPlugin implements Listener {
 		ShapedRecipe recipe = new ShapedRecipe(new ItemStack(raygun));
 		recipe.shape(new String[] { "BDB", "BCB", "BBB" });
 		recipe.setIngredient('B', Material.DIAMOND_BLOCK);
-		recipe.setIngredient('C', Material.CARROT_ITEM);
+		recipe.setIngredient('C', Material.STRING);
 		recipe.setIngredient('D', Material.DIAMOND);
 		getServer().addRecipe(recipe);
 		
